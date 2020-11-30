@@ -1,5 +1,8 @@
 .header-dark {
   background: url(../../assets/img/mountain_bg.jpg) #444;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
   background-size: cover;
   padding-bottom: 80px;
 }

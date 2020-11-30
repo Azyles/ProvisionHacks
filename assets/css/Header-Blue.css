@@ -207,8 +207,10 @@
   background-color: #aaa;
   overflow: hidden;
   background: url(../../assets/img/screen-content-phone.jpg);
-  background-size: cover;
+  background-attachment: fixed;
   background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
   z-index: -1;
 }
 
