@@ -17,3 +17,32 @@
 ::-webkit-scrollbar-thumb:hover {
   background: #555;
 }
+
+/*** Works on common browsers ***/
+::selection {
+    background-color: black;
+    color: #fff;
+}
+
+/*** Mozilla based browsers ***/
+::-moz-selection {
+    background-color: black;
+    color: #fff;
+}
+
+/***For Other Browsers ***/
+::-o-selection {
+    background-color: black;
+    color: #fff;
+}
+
+::-ms-selection {
+    background-color: black;
+    color: #fff;
+}
+
+/*** For Webkit ***/
+::-webkit-selection {
+    background-color: black;
+    color: #fff;
+}
