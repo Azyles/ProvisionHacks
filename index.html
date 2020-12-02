@@ -4,7 +4,7 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
-    <title>ProvisionHacks2020</title>
+    <title>ProvisionHacks</title>
     <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
     <link rel="stylesheet" href="assets/css/AvertaCY.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Bitter:400,700">
@@ -27,6 +27,7 @@
     <link rel="stylesheet" href="assets/css/styles.css">
     <link rel="stylesheet" href="assets/css/Team-Grid.css">
     <link rel="stylesheet" href="assets/css/Testimonials.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 </head>
 
 <body style="color: rgb(255,255,255);background: rgb(255,255,255);scroll-behavior: smooth;"><nav class="navbar fixed-top navbar-expand-lg navbar-light">
@@ -325,7 +326,51 @@
         document.addEventListener("contextmenu", function (e) {
                 e.preventDefault();
             }, false);
-    </script>
+    </script><script>
+  if (window.addEventListener) window.addEventListener('DOMMouseScroll', wheel, false);
+window.onmousewheel = document.onmousewheel = wheel;
+
+function wheel(event) {
+    var delta = 0;
+    if (event.wheelDelta) delta = event.wheelDelta / 40; //controls the scroll wheel range/speed
+    else if (event.detail) delta = -event.detail / 40;
+
+    handle(delta);
+    if (event.preventDefault) event.preventDefault();
+    event.returnValue = false;
+}
+
+var goUp = true;
+var end = null;
+var interval = null;
+
+function handle(delta) {
+var animationInterval = 15; //controls the scroll animation after scroll is done
+  var scrollSpeed = 20; //controls the scroll animation after scroll is done
+
+if (end == null) {
+  end = $(window).scrollTop();
+  }
+  end -= 20 * delta;
+  goUp = delta > 0;
+
+  if (interval == null) {
+    interval = setInterval(function () {
+      var scrollTop = $(window).scrollTop();
+      var step = Math.round((end - scrollTop) / scrollSpeed);
+      if (scrollTop <= 0 || 
+          scrollTop >= $(window).prop("scrollHeight") - $(window).height() ||
+          goUp && step > -1 || 
+          !goUp && step < 1 ) {
+        clearInterval(interval);
+        interval = null;
+        end = null;
+      }
+      $(window).scrollTop(scrollTop + step );
+    }, animationInterval);
+  }
+}
+</script> 
     <script src="assets/js/jquery.min.js"></script>
     <script src="assets/bootstrap/js/bootstrap.min.js"></script>
     <script src="assets/js/buttonscript.js"></script>
