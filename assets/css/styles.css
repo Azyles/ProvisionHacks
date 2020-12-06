@@ -23,33 +23,77 @@
 }
 
 ::selection {
-  background-color: black;
-  color: #fff;
+  background-color: lightblue;
+  color: white;
 }
 
 /* ** Mozilla based browsers ** */
 
 ::-moz-selection {
-  background-color: black;
-  color: #fff;
+  background-color: lightblue;
+  color: white;
 }
 
 /* **For Other Browsers ** */
 
 ::-o-selection {
-  background-color: black;
-  color: #fff;
+  background-color: lightblue;
+  color: white;
 }
 
 ::-ms-selection {
-  background-color: black;
-  color: #fff;
+  background-color: lightblue;
+  color: white;
 }
 
 /* ** For Webkit ** */
 
 ::-webkit-selection {
-  background-color: black;
-  color: #fff;
+  background-color: lightblue;
+  color: white;
+}
+
+.blink {
+  animation: blinkingText .8s infinite;
+}
+
+@keyframes blinkingText {
+  0% {
+    opacity: 0;
+  }
+  49% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+}
+
+.inverted {
+  background-color: #bbb;
+  color: #000084;
+}
+
+.shadow {
+  background-color: #000;
+  color: #000084;
+}
+
+.centered {
+  text-align: center;
+}
+
+a, u {
+  text-decoration: none!important;
+}
+
+.circle {
+  position: absolute;
+  /*border: solid 1px rgb(240,240,240);*/
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  /*background-color: rgb(240,240,240);*/
+  /*backdrop-filter: blur(20px);*/
 }
 
