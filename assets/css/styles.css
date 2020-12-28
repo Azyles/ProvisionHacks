@@ -55,6 +55,15 @@
   animation: blinkingText .8s infinite;
 }
 
+@media screen and (max-width: 600px) {
+  .Title {
+    font-size: 4rem;
+  }
+  .Title-1 {
+    font-size: 1rem;
+  }
+}
+
 @keyframes blinkingText {
   0% {
     opacity: 0;
