@@ -58,17 +58,84 @@
   <!--[if lt IE 7]>
       <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
     <![endif]-->
-  <div class="container-fluid text-center" style="height: 100%;">
-    <h1 style="padding-top: 14%; font-size: calc(3em + 3vw);font-weight: 600; color: black;">
-      ProvisionHacks
-    </h1>
-    <h1 style="padding-top: 1%; padding-bottom: 5%; font-size: calc(0.5em + 0.5vw);font-weight: 600; background: -webkit-linear-gradient(#9795f0, #fbc8d4);-webkit-background-clip: text;-webkit-text-fill-color: transparent;">
-      Paving a way for developers through difficult times
-    </h1>
-    <img style="width: 70%;" src="assets/img/computer.png" alt="">
-  <script src="" async defer></script>
 
-  </div>
+  
+    <!--Big Image-->
+
+  <section>
+    <div class="container-fluid text-center" style="height: 100%;">
+      <h1 style="padding-top: 14%; font-size: calc(3em + 3vw);font-weight: 600; color: black;">
+        ProvisionHacks
+      </h1>
+      <h1 style="padding-top: 1%; padding-bottom: 5%; font-size: calc(0.5em + 0.5vw);font-weight: 600; background: -webkit-linear-gradient(#9795f0, #fbc8d4);-webkit-background-clip: text;-webkit-text-fill-color: transparent;">
+        Paving a way for developers through difficult times
+      </h1>
+      <img style="width: 70%;" src="assets/img/computer.png" alt="" data-scroll-speed="2">
+    </div>
+
+  </section>
+
+  <!--End of Big Image-->
+
+  <!--Start of AboutUs-->
+
+  <section class="aboutUs">
+    <div>
+
+      <center>
+        <h1 style="font-size: calc(3em + 3vw); font-weight: 600; color: white; text-align: center; padding-top: 7%;">
+          About Us
+        </h1>
+      </center>
+      
+
+     <center>
+      <p class="aboutUsDescription">
+        Provision Hacks is a student-led hackathon, lasting for 48 hours of development! Provision Hacks is all about gathering students from around the world, and
+         giving an opportunity to build prototypes and to provide many learning opportunities for the attendees. There are many modern problems today that require modern 
+         solutions, and so the attendees will get the opportunity to form teams, learn, create, test, and present a solution targeted towards solving world-wide issues.
+          Ranging from Covid-19 to mental health and business issues, you are free to make anything your desire. Provision Hacks would love to provide help and support 
+          for the projects being developed and as always, look forward to having fun! Please make sure that you have signed up, checked our schedule, and joined both our
+           discord and devpost!
+
+      </p>
+     </center>
+    </div>
+  </section>
+
+  <!--End of AboutUs-->
+
+ 
+  <script>$.fn.moveIt = function(){
+    var $window = $(window);
+    var instances = [];
+    
+    $(this).each(function(){
+      instances.push(new moveItItem($(this)));
+    });
+    
+    window.addEventListener('scroll', function(){
+      var scrollTop = $window.scrollTop();
+      instances.forEach(function(inst){
+        inst.update(scrollTop);
+      });
+    }, {passive: true});
+  }
+  
+  var moveItItem = function(el){
+    this.el = $(el);
+    this.speed = parseInt(this.el.attr('data-scroll-speed'));
+  };
+  
+  moveItItem.prototype.update = function(scrollTop){
+    this.el.css('transform', 'translateY(' + -(scrollTop / this.speed) + 'px)');
+  };
+  
+  // Initialization
+  $(function(){
+    $('[data-scroll-speed]').moveIt();
+  });
+  </script>
 </body>
 
 </html>
