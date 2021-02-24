@@ -39,3 +39,23 @@ body{
     color: black;
     border: 2px solid white;
 }
+
+.aboutUs {
+    height: 100%;
+    width: 100%;
+    background-color: black;
+}
+
+.aboutUsDescription {
+    color: white;
+    width: 50%;
+    text-align: center;
+    font-size: 25px;
+    margin-top: 10%;
+    margin-left: 2%;
+}
+
+.imgPlaceholder {
+    height: 300px;
+    background-color: grey;
+}
