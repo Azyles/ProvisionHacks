@@ -62,11 +62,41 @@
     <h1 style="padding-top: 14%; font-size: calc(3em + 3vw);font-weight: 600; color: black;">
       ProvisionHacks
     </h1>
-    <h1 style="padding-top: 1%; padding-bottom: 5%; font-size: calc(0.5em + 0.5vw);font-weight: 600; background: -webkit-linear-gradient(#9795f0, #fbc8d4);-webkit-background-clip: text;-webkit-text-fill-color: transparent;">
+    <h1 style<="padding-top: 1%; padding-bottom: 5%; font-size: calc(0.5em + 0.5vw);font-weight: 600; background: -webkit-linear-gradient(#9795f0, #fbc8d4);-webkit-background-clip: text;-webkit-text-fill-color: transparent;">
       Paving a way for developers through difficult times
     </h1>
-    <img style="width: 70%;" src="assets/img/computer.png" alt="">
-  <script src="" async defer></script>
+    <img style="width: 70%;" src="assets/img/computer.png" alt="" data-scroll-speed="2">
+  </div>  
+  <script>$.fn.moveIt = function(){
+    var $window = $(window);
+    var instances = [];
+    
+    $(this).each(function(){
+      instances.push(new moveItItem($(this)));
+    });
+    
+    window.addEventListener('scroll', function(){
+      var scrollTop = $window.scrollTop();
+      instances.forEach(function(inst){
+        inst.update(scrollTop);
+      });
+    }, {passive: true});
+  }
+  
+  var moveItItem = function(el){
+    this.el = $(el);
+    this.speed = parseInt(this.el.attr('data-scroll-speed'));
+  };
+  
+  moveItItem.prototype.update = function(scrollTop){
+    this.el.css('transform', 'translateY(' + -(scrollTop / this.speed) + 'px)');
+  };
+  
+  // Initialization
+  $(function(){
+    $('[data-scroll-speed]').moveIt();
+  });
+  </script>
 </body>
 
 </html>
