@@ -21,6 +21,11 @@
   <link rel="preconnect" href="https://fonts.gstatic.com">
   <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@300;400;600;700&display=swap" rel="stylesheet">
 
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+ 
+
 </head>
 <nav class="navbar navbar-expand-lg fixed-top navbar-light center" style="background-color: white;">
   <div class="container-fluid" style="height: 50px;">
@@ -92,7 +97,7 @@
       
 
       <div class="row">
-        <p class="aboutUsDescription col-sm">
+        <p class="aboutUsDescription col-sm" data-aos="fade-up" data-aos-delay="6">
           Provision Hacks is a student-led hackathon, lasting for 48 hours of development! Provision Hacks is all about gathering students from around the world, and
           giving an opportunity to build prototypes and to provide many learning opportunities for the attendees. There are many modern problems today that require modern 
           solutions, and so the attendees will get the opportunity to form teams, learn, create, test, and present a solution targeted towards solving world-wide issues.
@@ -102,7 +107,11 @@
 
         </p>
 
-        <img src="https://cdn-a.william-reed.com/var/wrbm_gb_food_pharma/storage/images/publications/feed/feednavigator.com/article/2020/05/19/the-cow-favors-natural-over-synthetic-vitamin-e/11403541-1-eng-GB/The-cow-favors-natural-over-synthetic-vitamin-E.jpg" alt="" class="col-sm">
+        <div class="col-sm">
+          <img src="/assets/img/undraw_coding_6mjf.svg" alt="" class="" style="width: 600px; margin-left: 20%; margin-top: -10%;" data-aos="fade-up" data-aos-delay="6" >
+
+        </div>
+
       </div>
     </div>
   </section>
@@ -111,9 +120,126 @@
 
   <!--End of AboutUs-->
 
-  <section>
-    
+  <!--Start of Sponsors-->
+
+  <section class="sponsors">
+    <center>
+      <h1 style="font-size: calc(3em + 3vw); font-weight: 600; color: rgb(0, 0, 0); text-align: center; padding-top: 7%; padding-bottom: 7%;">
+        Sponsors
+      </h1>
+    </center>
+
+    <center>
+      <div class="container" style="margin-bottom: 30%;">
+        <div class="row">
+          <div class="col-sm">
+            <img src="https://cdn.worldvectorlogo.com/logos/sublime-text.svg" alt="" style="width: 200px;">
+
+          </div>
+          <div class="col-sm">
+            <img src="https://cdn.worldvectorlogo.com/logos/sublime-text.svg" alt="" style="width: 200px;">
+
+          </div>
+          <div class="col-sm">
+            <img src="https://cdn.worldvectorlogo.com/logos/sublime-text.svg" alt="" style="width: 200px;">
+
+          </div>
+        </div>
+        
+        <div class="row" style="margin-top: 10%;">
+          <div class="col-sm">
+            <img src="https://cdn.worldvectorlogo.com/logos/sublime-text.svg" alt="" style="width: 200px;">
+
+          </div>
+          <div class="col-sm">
+            <img src="https://cdn.worldvectorlogo.com/logos/sublime-text.svg" alt="" style="width: 200px;">
+
+          </div>
+          <div class="col-sm">
+            <img src="https://cdn.worldvectorlogo.com/logos/sublime-text.svg" alt="" style="width: 200px;">
+
+          </div>
+        </div>
+
+      </div>
+    </center>
+
   </section>
+
+  <!--End of Sponsors-->
+
+  <!--Start of Schedule-->
+  <section class="schedule">
+    <center>
+      <h1 style="font-size: calc(3em + 3vw); font-weight: 600; color: rgb(255, 255, 255); text-align: center; padding-top: 7%; padding-bottom: 7%;">
+        Schedule
+      </h1>
+    </center>
+
+  </section>
+
+  <!--End of Schedule-->
+
+  <!--Start of FaQ-->
+  <section class="FaQ">
+    
+
+<div class="container" style="margin-top: 10%;">
+  <h2>Frequently Asked Questions</h2>
+  <div class="accordion">
+    <div class="accordion-item">
+      <button id="accordion-button-1" aria-expanded="false"><span class="accordion-title">Why is the moon sometimes out during the day?</span><span class="icon" aria-hidden="true"></span></button>
+      <div class="accordion-content">
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Elementum sagittis vitae et leo duis ut. Ut tortor pretium viverra suspendisse potenti.</p>
+      </div>
+    </div>
+    <div class="accordion-item">
+      <button id="accordion-button-2" aria-expanded="false"><span class="accordion-title">Why is the sky blue?</span><span class="icon" aria-hidden="true"></span></button>
+      <div class="accordion-content">
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Elementum sagittis vitae et leo duis ut. Ut tortor pretium viverra suspendisse potenti.</p>
+      </div>
+    </div>
+    <div class="accordion-item">
+      <button id="accordion-button-3" aria-expanded="false"><span class="accordion-title">Will we ever discover aliens?</span><span class="icon" aria-hidden="true"></span></button>
+      <div class="accordion-content">
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Elementum sagittis vitae et leo duis ut. Ut tortor pretium viverra suspendisse potenti.</p>
+      </div>
+    </div>
+    <div class="accordion-item">
+      <button id="accordion-button-4" aria-expanded="false"><span class="accordion-title">How much does the Earth weigh?</span><span class="icon" aria-hidden="true"></span></button>
+      <div class="accordion-content">
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Elementum sagittis vitae et leo duis ut. Ut tortor pretium viverra suspendisse potenti.</p>
+      </div>
+    </div>
+    <div class="accordion-item">
+      <button id="accordion-button-5" aria-expanded="false"><span class="accordion-title">How do airplanes stay up?</span><span class="icon" aria-hidden="true"></span></button>
+      <div class="accordion-content">
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Elementum sagittis vitae et leo duis ut. Ut tortor pretium viverra suspendisse potenti.</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script>
+  const items = document.querySelectorAll(".accordion button");
+
+function toggleAccordion() {
+  const itemToggle = this.getAttribute('aria-expanded');
+  
+  for (i = 0; i < items.length; i++) {
+    items[i].setAttribute('aria-expanded', 'false');
+  }
+  
+  if (itemToggle == 'false') {
+    this.setAttribute('aria-expanded', 'true');
+  }
+}
+
+items.forEach(item => item.addEventListener('click', toggleAccordion));
+</script>
+
+  </section>
+  <!--End of FaQ-->
 
  
   <script>$.fn.moveIt = function(){
@@ -146,6 +272,11 @@
     $('[data-scroll-speed]').moveIt();
   });
   </script>
+
+<script>
+  AOS.init();
+</script>
+
 </body>
 
 </html>
