@@ -162,14 +162,11 @@ padding-right:10px;
 }
 
 .team-grid .item:hover .cover {
-  border-radius: 100%;
   opacity: 1;
 }
 
 .team-grid .item .cover {
-  margin-top: 25px;
-  height: 90%;
-  border-radius: 100%;
+  height: 100%;
 }
 
 .team-grid .item .name {
