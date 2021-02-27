@@ -23,6 +23,7 @@ body{
      
  }
 
+
 .buttonW {
     background-color: black;
     color: white;
@@ -31,7 +32,8 @@ body{
     border-radius: 5px;
     height: 40px;
     width: 150px;
-    transition: 0.3s;
+  transition-duration: 0.4s;
+  cursor: pointer;
   }
   
 .buttonW:hover {
@@ -40,8 +42,53 @@ body{
     border: 2px solid white;
 }
 
+
+.button5 {
+	
+  margin: 4px 2px;
+  padding: 16px 32px;
+    background-color: transparent;
+    color: black;
+    font-family: 'Nunito Sans', sans-serif;
+	font-weight: 700;
+	  font-size: 18px;
+    border: 2px solid #e3e3e3;
+    border-radius: 5px;
+    width: 170px;
+  transition-duration: 0.4s;
+  cursor: pointer;
+  }
+  
+.button5:hover {
+    background-color: black;
+    color: white;
+    border: 2px solid black;
+}
+
+.button6 {
+	
+  margin: 4px 2px;
+  padding: 16px 32px;
+    background-color: transparent;
+    color: black;
+    font-family: 'Nunito Sans', sans-serif;
+	font-weight: 700;
+	  font-size: 18px;
+    border: 2px solid #e3e3e3;
+    border-radius: 5px;
+    width: 170px;
+  transition-duration: 0.4s;
+  cursor: pointer;
+  }
+  
+.button6:hover {
+    background-color: #7f8fe8;
+    color: white;
+    border: 2px solid #7f8fe8;
+}
+
 .aboutUs {
-	margin-top: -20%;
+	margin-top: -17%;
     height: 100%;
     width: 100%;
     background-color: white;
