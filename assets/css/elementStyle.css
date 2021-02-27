@@ -41,14 +41,15 @@ body{
 }
 
 .aboutUs {
+	margin-top: -20%;
     height: 100%;
     width: 100%;
-    background-color: #78D492;
+    background-color: white;
 }
 
 .aboutUsDescription {
-    color: white;
-    width: 50%;
+	color: black;
+   width: 50%;
     text-align: center;
     font-size: 25px;
     margin-top: 10%;
@@ -63,7 +64,7 @@ body{
 .sponsors {
     height: 120%;
     width: 100%;
-    background-color: #ffffff;
+    background-color: rgb(25, 25, 25);;
 }
 
 @import url('https://fonts.googleapis.com/css?family=Hind:300,400&display=swap');
