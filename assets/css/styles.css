@@ -79,6 +79,7 @@ a, u {
 .navbar-nav > li > a{
   color: white;
   border-radius: 10px;
+  font-weight: 600;
 }
 
 .navbar-nav > li > a:hover{
