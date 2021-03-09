@@ -83,7 +83,7 @@ a, u {
 }
 
 .navbar-nav > li > a:hover{
-  background-color:  rgba(200, 200, 200, 0.2);
+  background-color:  rgba(  95, 161, 199 , 0.2);
   border-radius: 10px;
   color: white;
 }
@@ -196,4 +196,17 @@ padding-right:10px;
 
 .team-grid .social a:hover {
   opacity: 1;
+}
+
+
+/* The typing effect */
+@keyframes typing {
+  from { width: 0 }
+  to { width: 100% }
+}
+
+/* The typewriter cursor effect */
+@keyframes blink-caret {
+  from, to { border-color: transparent }
+  50% { border-color: orange; }
 }
