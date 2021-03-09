@@ -44,23 +44,24 @@
       <ul class="navbar-nav  mr-auto mx-auto">
         <li class="nav-item">
           <a class="nav-link" href="#aboutUs">About Us</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#sponsors">Sponsors</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#FaQ">FAQ</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#Team">Team</a>
-          </li>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#sponsors">Sponsors</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#FaQ">FAQ</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#Team">Team</a>
+        </li>
 
-          <span>
-            <div class="text-center"><a href="sponsorguide.html"><button class="button buttonW">Sponsor Us</button></a></div>
-          </span>
+        <span>
+          <div class="text-center"><a href="sponsorguide.html"><button class="button buttonW">Sponsor Us</button></a>
+          </div>
+        </span>
 
     </div>
-    
+
   </div>
 </nav>
 
@@ -71,39 +72,111 @@
 
 
   <!--Big Image-->
-  
-  <section>
-    <div class="container-fluid text-center" style="min-height: 100%;">
-      <h1 style="padding-top: 14%; font-size: calc(3em + 3vw);font-weight: 600; color: black;">
-        ProvisionHacks
-      </h1>
-      
-      <h1 style="padding-top: 1%; padding-bottom: 3%; font-size: calc(0.5em + 0.5vw);font-weight: 600; color: #A1C4FD;">
+
+  <section style="justify-content: center;">
+    <div class="container-fluid text-center" style="min-height: 100%; justify-content: center;">
+      <div class="row">
+        <img style="padding-top: 10%;width: 7%;margin-left: 46.5%;" src="assets/img/LogoProv.png" alt="">
+        <h1 style="padding-top: 3%; font-size: calc(3em + 3vw);font-weight: 600; color: black;">
+          Provision Hacks
+        </h1>
+      </div>
+
+
+      <h1 style="padding-top: 1%; font-size: calc(0.5em + 0.7vw);font-weight: 600; color: #4f8df1;">
         Paving a way for developers through difficult times
+      </h1>
+
+      <h1 style="padding-bottom: 3%; font-size: calc(0.5em + 0.9vw);font-weight: 600; color: #4f8df1;">
+        April 16 - 18th, 2021 | Location: Online
       </h1>
 
 
       <div class="d-flex justify-content-center">
         <div class="row">
           <div class="col">
-            <div class="text-center"><a class="typeform-share button" data-size="100" target="_blank" href="https://form.typeform.com/to/op4KN480?typeform-medium=embed-snippet" data-mode="popup"><button class="button button5">Register</button></a>
+            <div class="text-center"><a class="typeform-share button" data-size="100" target="_blank"
+                href="https://form.typeform.com/to/op4KN480?typeform-medium=embed-snippet" data-mode="popup"><button
+                  class="button button5">Register</button></a>
             </div>
           </div>
           <div class="col">
-            <div class="text-center"><a href="https://discord.gg/4mk49j8bDT"><button class="button button6">Discord</button></a>
+            <div class="text-center"><a href="https://discord.gg/4mk49j8bDT"><button
+                  class="button button6">Discord</button></a>
             </div>
           </div>
         </div>
       </div>
 
+      <style>
+        .typeAnimation {
+          color: lime;
+          font-family: "Courier";
+          font-size: 35px;
+          font-weight: bold;
+          white-space: nowrap;
+          overflow: hidden;
+          width: 30em;
+          margin-left: 5%;
+          animation: type 4s steps(60, end);
+        }
+
+        .typeAnimation:nth-child(2) {
+          animation: type2 8s steps(60, end);
+        }
+
+        .typeAnimation {
+          color: lime;
+          text-decoration: none;
+        }
+
+        .cursor {
+          animation: blink 1s infinite;
+          color: lime;
+          font-weight: bold;
+          font-size: 50px;
+        }
+
+        @keyframes type {
+          from {
+            width: 0;
+          }
+        }
+
+        @keyframes type2 {
+          0% {
+            width: 0;
+          }
+
+          50% {
+            width: 0;
+          }
+
+          100% {
+            width: 100;
+          }
+        }
+
+        @keyframes blink {
+          to {
+            opacity: .0;
+          }
+        }
+
+        ::selection {
+          background: lime;
+        }
+      </style>
+
 
       <div class="stack text-center" style="justify-content: center;">
-        <img style="width: 70%; position: relative;" src="assets/img/computerblank.png" alt="" data-scroll-speed="0">
-        <h1 style="position: absolute;margin-left: 47%; margin-top: -23%;font-size: calc(2em + 2vw); font-weight: 600;color: rgb(60, 60, 60); text-align: center;animation: 
-    typing 3.5s steps(40, end),
-    blink-caret .75s step-end infinite;overflow: hidden; /* Ensures the content is not revealed until the animation */
-  border-right: .15em solid orange; /* The typwriter cursor */
-  white-space: nowrap;"  data-scroll-speed="0">Hello</h1>
+        <img style="width: 70%; position: relative;" src="assets/img/Group 14.png" alt="" data-scroll-speed="0">
+
+        <div class="d-flex justify-content-center">
+          <div class="typeAnimation" style="position: absolute; margin-top: -25%;">print('Welcome to Provision
+            Hacks')<span class="cursor">|</span></div>
+        </div>
+
 
       </div>
     </div>
@@ -116,7 +189,7 @@
 
   <section class="aboutUs">
     <div>
-<div id="aboutUs"></div>
+      <div id="aboutUs"></div>
       <center>
         <h1
           style="font-size: calc(3em + 3vw); font-weight: 600;color: rgb(60, 60, 60); text-align: center; padding-top: 7%; padding-bottom: 7%;">
@@ -154,10 +227,13 @@
   </section>
 
 
-  <div  style="background-color: rgba(159, 157, 255, 1);border-radius: 4px;margin-top: 7%; padding-top: 2%;padding-bottom: 2%; margin-left: 5%;margin-right: 5%;"><video style="border-radius: 4px;padding-left: 5%;padding-right: 5%;padding-top: 2%;padding-bottom: 2%;" width="100%" height="100%" controls autoplay>
-    <source src="assets/img/yt1s.com - Provision Hacks 2021 Trailer_1080p.mp4" type="video/mp4">
-    Your browser does not support the videos.
-  </video></div>
+  <div
+    style="background-color: rgba(159, 157, 255, 1);border-radius: 4px;margin-top: 7%; padding-top: 2%;padding-bottom: 2%; margin-left: 5%;margin-right: 5%;">
+    <video style="border-radius: 4px;padding-left: 5%;padding-right: 5%;padding-top: 2%;padding-bottom: 2%;"
+      width="100%" height="100%" controls autoplay>
+      <source src="assets/img/yt1s.com - Provision Hacks 2021 Trailer_1080p.mp4" type="video/mp4">
+      Your browser does not support the videos.
+    </video></div>
 
 
 
@@ -178,7 +254,7 @@
       <div class="container" style="margin-bottom: 30%;">
         <div class="row">
           <div class="col-sm">
-            <img src="assets/img/Magoosh-Logo_purple-525x1151.png" alt="" style="width: 300px;">
+            <a><img src="assets/img/Magoosh-Logo_purple-525x1151.png" alt="" style="width: 300px;"></a>
 
           </div>
 
@@ -187,14 +263,17 @@
         <div class="row" style="margin-top: 10%;">
 
           <div class="d-flex justify-content-center">
-            <img src="https://cdn.worldvectorlogo.com/logos/sublime-text.svg" alt="" style="width: 175px; margin-right: 5%;">
+            <img src="https://cdn.worldvectorlogo.com/logos/sublime-text.svg" alt=""
+              style="width: 175px; margin-right: 5%;">
 
 
-            <img src="https://pathrise-website-guide-wp.s3.us-west-1.amazonaws.com/guides/wp-content/uploads/2019/07/10170023/r-66-interview-cake-be-good-at-programming-interviews.jpg" alt="" style="width: 175px;">
+            <img
+              src="https://pathrise-website-guide-wp.s3.us-west-1.amazonaws.com/guides/wp-content/uploads/2019/07/10170023/r-66-interview-cake-be-good-at-programming-interviews.jpg"
+              alt="" style="width: 175px;">
 
           </div>
 
-           
+
         </div>
 
         <div class="row" style="margin-top: 10%;">
@@ -208,7 +287,7 @@
             <img src="assets/img/sticker_mule.png" alt="" style="width: 200px;">
           </div>
 
-         
+
 
         </div>
 
@@ -308,23 +387,26 @@
       <h2>Frequently Asked Questions</h2>
       <div class="accordion">
         <div class="accordion-item">
-          <button id="accordion-button-1" aria-expanded="false"><span class="accordion-title">Is there any cost to attending provision hacks?</span><span class="icon" aria-hidden="true"></span></button>
+          <button id="accordion-button-1" aria-expanded="false"><span class="accordion-title">Is there any cost to
+              attending provision hacks?</span><span class="icon" aria-hidden="true"></span></button>
           <div class="accordion-content">
             <p>There is no cost to attending Provision Hacks. Provision Hacks is absolutely free!
             </p>
           </div>
         </div>
         <div class="accordion-item">
-          <button id="accordion-button-2" aria-expanded="false"><span class="accordion-title">What is the theme of the Hackathon?</span><span class="icon" aria-hidden="true"></span></button>
+          <button id="accordion-button-2" aria-expanded="false"><span class="accordion-title">What is the theme of the
+              Hackathon?</span><span class="icon" aria-hidden="true"></span></button>
           <div class="accordion-content">
-            <p>You may build whatever you desire, as long as it is a project that is intended towards helping with problems in society today. You may also compete under our other categories!
+            <p>You may build whatever you desire, as long as it is a project that is intended towards helping with
+              problems in society today. You may also compete under our other categories!
 
             </p>
           </div>
         </div>
         <div class="accordion-item">
           <button id="accordion-button-3" aria-expanded="false"><span class="accordion-title">Can we work in teams?
-          </span><span class="icon" aria-hidden="true"></span></button>
+            </span><span class="icon" aria-hidden="true"></span></button>
           <div class="accordion-content">
             <p>Yes you may work in a team. Your group can have a maximum of 4 people
 
@@ -332,15 +414,17 @@
           </div>
         </div>
         <div class="accordion-item">
-          <button id="accordion-button-4" aria-expanded="false"><span class="accordion-title">Can I submit a project that I have created in the past? 
-          </span><span class="icon" aria-hidden="true"></span></button>
+          <button id="accordion-button-4" aria-expanded="false"><span class="accordion-title">Can I submit a project
+              that I have created in the past?
+            </span><span class="icon" aria-hidden="true"></span></button>
           <div class="accordion-content">
-            <p>Unfortunately, you will not be able to do that. We want the attendees to create projects within the 48-hour time frame given.</p>
+            <p>Unfortunately, you will not be able to do that. We want the attendees to create projects within the
+              48-hour time frame given.</p>
           </div>
         </div>
         <div class="accordion-item">
           <button id="accordion-button-5" aria-expanded="false"><span class="accordion-title">Have any other questions?
-          </span><span class="icon" aria-hidden="true"></span></button>
+            </span><span class="icon" aria-hidden="true"></span></button>
           <div class="accordion-content">
             <p>Make sure to email help@provisionhacks.com
             </p>
@@ -356,167 +440,174 @@
           The Team
         </h1>
         <div id="Team"></div>
-      
-      <div id="Team" class="team-grid" style="background: white;color: rgb(255,255,255);">
-        <div class="col">
-          <div class="container" style="max-width: 100%;padding-right: 40px;padding-left: 40px;">
-            <div class="row people" style="padding-bottom: 0px;">
-              <div class="col-md-2 col-lg-4 item">
-                <div class="box"
-                  style="background: url(&quot;assets/img/levi.png&quot;) center / cover no-repeat;border-radius: 10px;">
-                  <div class="cover" style="background: rgba(0,0,0,0.75);">
-                    <h3 class="name" style="padding-right: 4px;padding-left: 4px;"><strong>Levi Bandanadam</strong></h3>
-                    <p class="title">Executive Director<br></p>
-                    <div class="social"><a href="https://www.instagram.com/lev._.ban/" target="blank"><i class="fab fa-instagram"></i></a><a
-                        href="https://www.linkedin.com/in/levi-bandanadam-0807b9175"  target="blank"><i class="fab fa-linkedin"></i></a></div>
+
+        <div id="Team" class="team-grid" style="background: white;color: rgb(255,255,255);">
+          <div class="col">
+            <div class="container" style="max-width: 100%;padding-right: 40px;padding-left: 40px;">
+              <div class="row people" style="padding-bottom: 0px;">
+                <div class="col-md-2 col-lg-4 item">
+                  <div class="box"
+                    style="background: url(&quot;assets/img/levi.png&quot;) center / cover no-repeat;border-radius: 10px;">
+                    <div class="cover" style="background: rgba(0,0,0,0.75);">
+                      <h3 class="name" style="padding-right: 4px;padding-left: 4px;"><strong>Levi Bandanadam</strong>
+                      </h3>
+                      <p class="title">Executive Director<br></p>
+                      <div class="social"><a href="https://www.instagram.com/lev._.ban/" target="blank"><i
+                            class="fab fa-instagram"></i></a><a
+                          href="https://www.linkedin.com/in/levi-bandanadam-0807b9175" target="blank"><i
+                            class="fab fa-linkedin"></i></a></div>
+                    </div>
                   </div>
                 </div>
-              </div>
-              <div class="col-md-2 col-lg-4 item">
-                <div class="box"
-                  style="background: url(&quot;assets/img/Sai.png&quot;) top / cover no-repeat;border-radius: 10px;padding-top: 10px;">
-                  <div class="cover" style="background: rgba(0,0,0,0.75);">
-                    <h3 class="name">Sai Mittapalli<br></h3>
-                    <p class="title"><strong>EXECUTIVE DIRECTOR</strong><br></p>
-                    <div class="social"><a href="https://www.instagram.com/sai.mitt/"  target="blank"><i class="fab fa-instagram"></i></a><a
-                        href="https://www.linkedin.com/in/sai-krishna-mittapalli-59b749180/" target="blank"><i class="fab fa-linkedin"></i></a><a href="#"></a></div>
+                <div class="col-md-2 col-lg-4 item">
+                  <div class="box"
+                    style="background: url(&quot;assets/img/Sai.png&quot;) top / cover no-repeat;border-radius: 10px;padding-top: 10px;">
+                    <div class="cover" style="background: rgba(0,0,0,0.75);">
+                      <h3 class="name">Sai Mittapalli<br></h3>
+                      <p class="title"><strong>EXECUTIVE DIRECTOR</strong><br></p>
+                      <div class="social"><a href="https://www.instagram.com/sai.mitt/" target="blank"><i
+                            class="fab fa-instagram"></i></a><a
+                          href="https://www.linkedin.com/in/sai-krishna-mittapalli-59b749180/" target="blank"><i
+                            class="fab fa-linkedin"></i></a><a href="#"></a></div>
+                    </div>
                   </div>
                 </div>
-              </div>
-              <div class="col-md-2 col-lg-4 item">
-                <div class="box"
-                  style="background: url(&quot;assets/img/Ansh.png&quot;) center / cover no-repeat;border-radius: 10px;">
-                  <div class="cover" style="background: rgba(0,0,0,0.75);">
-                    <h3 class="name">Ansh Parikh</h3>
-                    <p class="title">Co-Executive Director</p>
-                    <div class="social"><a href="https://www.linkedin.com/in/anshparikh123/" target="blank"><i class="fab fa-linkedin"></i></a><a href="https://www.instagram.com/_anshp_/" target="blank"><i
-                          class="fab fa-instagram"></i></a></div>
+                <div class="col-md-2 col-lg-4 item">
+                  <div class="box"
+                    style="background: url(&quot;assets/img/Ansh.png&quot;) center / cover no-repeat;border-radius: 10px;">
+                    <div class="cover" style="background: rgba(0,0,0,0.75);">
+                      <h3 class="name">Ansh Parikh</h3>
+                      <p class="title">Co-Executive Director</p>
+                      <div class="social"><a href="https://www.linkedin.com/in/anshparikh123/" target="blank"><i
+                            class="fab fa-linkedin"></i></a><a href="https://www.instagram.com/_anshp_/"
+                          target="blank"><i class="fab fa-instagram"></i></a></div>
+                    </div>
                   </div>
                 </div>
-              </div>
-              <div class="col-md-2 col-lg-4 item">
-                <div class="box"
-                  style="background: url(&quot;assets/img/Sid.png&quot;) center / cover no-repeat;border-radius: 10px;">
-                  <div class="cover" style="background: rgba(0,0,0,0.75);">
-                    <h3 class="name">Siddharth Krishna</h3>
-                    <p class="title"><strong>Operational Director</strong></p>
-                    <div class="social"><a href="https://www.instagram.com/sidkrishna._/" target="blank"><i class="fab fa-instagram"></i></a><a href="https://www.linkedin.com/in/siddharth-krishna-ab4a0b16a/" target="blank"><i
-                          class="fab fa-linkedin"></i></a></div>
+                <div class="col-md-2 col-lg-4 item">
+                  <div class="box"
+                    style="background: url(&quot;assets/img/Sid.png&quot;) center / cover no-repeat;border-radius: 10px;">
+                    <div class="cover" style="background: rgba(0,0,0,0.75);">
+                      <h3 class="name">Siddharth Krishna</h3>
+                      <p class="title"><strong>Operational Director</strong></p>
+                      <div class="social"><a href="https://www.instagram.com/sidkrishna._/" target="blank"><i
+                            class="fab fa-instagram"></i></a><a
+                          href="https://www.linkedin.com/in/siddharth-krishna-ab4a0b16a/" target="blank"><i
+                            class="fab fa-linkedin"></i></a></div>
+                    </div>
                   </div>
                 </div>
-              </div>
-              <div class="col-md-2 col-lg-4 item">
-                <div class="box"
-                  style="background: url(&quot;assets/img/asad.png&quot;) center / cover no-repeat;border-radius: 10px;">
-                  <div class="cover" style="background: rgba(0,0,0,0.75);">
-                    <h3 class="name"><strong>Asad Shahid</strong><br></h3>
-                    <p class="title"><strong>MARKETING AND CONTENT MANAGER</strong><br></p>
-                    <div class="social"><a href="https://www.linkedin.com/in/asad-shahid-9553a91b0/" target="blank"><i class="fab fa-linkedin"></i></a><a href="https://www.instagram.com/a1sad.shahid/" target="blank"><i
-                          class="fab fa-instagram"></i></a></div>
+                <div class="col-md-2 col-lg-4 item">
+                  <div class="box"
+                    style="background: url(&quot;assets/img/asad.png&quot;) center / cover no-repeat;border-radius: 10px;">
+                    <div class="cover" style="background: rgba(0,0,0,0.75);">
+                      <h3 class="name"><strong>Asad Shahid</strong><br></h3>
+                      <p class="title"><strong>MARKETING AND CONTENT MANAGER</strong><br></p>
+                      <div class="social"><a href="https://www.linkedin.com/in/asad-shahid-9553a91b0/" target="blank"><i
+                            class="fab fa-linkedin"></i></a><a href="https://www.instagram.com/a1sad.shahid/"
+                          target="blank"><i class="fab fa-instagram"></i></a></div>
+                    </div>
                   </div>
                 </div>
-              </div>
-              <div class="col-md-2 col-lg-4 item">
-                <div class="box"
-                  style="background: url(&quot;assets/img/Kush.png&quot;) center / cover no-repeat;border-radius: 10px;">
-                  <div class="cover" style="background: rgba(0,0,0,0.75);">
-                    <h3 class="name">Kushagra Singh</h3>
-                    <p class="title"><strong>Full Stack Developer</strong></p>
-                    <div class="social"><a href="https://www.linkedin.com/in/kushagra-singh1/" target="blank"><i class="fab fa-linkedin"></i></a><a href="https://www.instagram.com/kushagra.singh7/" target="blank"><i
-                          class="fab fa-instagram"></i></a></div>
+                <div class="col-md-2 col-lg-4 item">
+                  <div class="box"
+                    style="background: url(&quot;assets/img/Kush.png&quot;) center / cover no-repeat;border-radius: 10px;">
+                    <div class="cover" style="background: rgba(0,0,0,0.75);">
+                      <h3 class="name">Kushagra Singh</h3>
+                      <p class="title"><strong>Full Stack Developer</strong></p>
+                      <div class="social"><a href="https://www.linkedin.com/in/kushagra-singh1/" target="blank"><i
+                            class="fab fa-linkedin"></i></a><a href="https://www.instagram.com/kushagra.singh7/"
+                          target="blank"><i class="fab fa-instagram"></i></a></div>
+                    </div>
                   </div>
                 </div>
               </div>
             </div>
           </div>
         </div>
-      </div>
-    </center>
+      </center>
     </section>
 
     <!--FOOTER -->
 
-<footer class="bg-dark text-center text-white">
-  <!-- Grid container -->
-  <div class="container p-4">
-    <!-- Section: Social media -->
-    <section class="mb-4">
-      <!-- Facebook -->
-      <a class="btn btn-outline-light btn-floating m-1" href="https://www.facebook.com/provision.hacks" target="blank" role="button"
-        ><i class="fab fa-facebook-f"></i
-      ></a>
+    <footer class="bg-dark text-center text-white">
+      <!-- Grid container -->
+      <div class="container p-4">
+        <!-- Section: Social media -->
+        <section class="mb-4">
+          <!-- Facebook -->
+          <a class="btn btn-outline-light btn-floating m-1" href="https://www.facebook.com/provision.hacks"
+            target="blank" role="button"><i class="fab fa-facebook-f"></i></a>
 
-      <!-- Twitter -->
-      <a class="btn btn-outline-light btn-floating m-1" href="https://twitter.com/HacksProvision" target="blank" role="button"
-        ><i class="fab fa-twitter"></i
-      ></a>
+          <!-- Twitter -->
+          <a class="btn btn-outline-light btn-floating m-1" href="https://twitter.com/HacksProvision" target="blank"
+            role="button"><i class="fab fa-twitter"></i></a>
 
-      <!-- Instagram -->
-      <a class="btn btn-outline-light btn-floating m-1" href="https://www.instagram.com/provisionhacks/" target="blank" role="button"
-        ><i class="fab fa-instagram"></i
-      ></a>
+          <!-- Instagram -->
+          <a class="btn btn-outline-light btn-floating m-1" href="https://www.instagram.com/provisionhacks/"
+            target="blank" role="button"><i class="fab fa-instagram"></i></a>
 
-      <!-- Linkedin -->
-      <a class="btn btn-outline-light btn-floating m-1" href="https://www.linkedin.com/in/provision-hacks-6a0458201/" target="blank" role="button"
-        ><i class="fab fa-linkedin-in"></i
-      ></a>
+          <!-- Linkedin -->
+          <a class="btn btn-outline-light btn-floating m-1"
+            href="https://www.linkedin.com/in/provision-hacks-6a0458201/" target="blank" role="button"><i
+              class="fab fa-linkedin-in"></i></a>
 
-      <!-- Github -->
-      <a class="btn btn-outline-light btn-floating m-1" href="mailto:info@provisionhacks.com" target="blank" role="button"
-        ><i class="fas fa-envelope"></i
-      ></a>
-    </section>
-    <!-- Section: Social media -->
+          <!-- Github -->
+          <a class="btn btn-outline-light btn-floating m-1" href="mailto:info@provisionhacks.com" target="blank"
+            role="button"><i class="fas fa-envelope"></i></a>
+        </section>
+        <!-- Section: Social media -->
 
 
-    <!-- Section: Text -->
-    <section class="mb-5">
-      <p>
-        Provision Hacks is a student-led hackathon that is all about gathering students from around the world, and giving an opportunity to build prototypes and to provide many learning opportunities.
-      </p>
-    </section>
-    <!-- Section: Text -->
+        <!-- Section: Text -->
+        <section class="mb-5">
+          <p>
+            Provision Hacks is a student-led hackathon that is all about gathering students from around the world, and
+            giving an opportunity to build prototypes and to provide many learning opportunities.
+          </p>
+        </section>
+        <!-- Section: Text -->
 
-    <!-- Section: Links -->
-    <section class="d-flex justify-content-center">
-      <!--Grid row-->
-      <div class="row">
-        <!--Grid column-->
-        <div>
-          <h5 class="text-uppercase">Links</h5>
+        <!-- Section: Links -->
+        <section class="d-flex justify-content-center">
+          <!--Grid row-->
+          <div class="row">
+            <!--Grid column-->
+            <div>
+              <h5 class="text-uppercase">Links</h5>
 
-          <ul class="list-unstyled mb-0">
-            <li>
-              <a class="text-white" href="#aboutUs" >About Us</a>
-            </li>
-            <li>
-              <a class="text-white" href="#sponsors">Sponsors</a>
-            </li>
-            <li>
-              <a class="text-white" href="#FaQ">FAQ</a>
-            </li>
-            <li>
-              <a class="text-white" href="#Team">Team</a>
-            </li>
-          </ul>
-        </div>
-        <!--Grid column-->
+              <ul class="list-unstyled mb-0">
+                <li>
+                  <a class="text-white" href="#aboutUs">About Us</a>
+                </li>
+                <li>
+                  <a class="text-white" href="#sponsors">Sponsors</a>
+                </li>
+                <li>
+                  <a class="text-white" href="#FaQ">FAQ</a>
+                </li>
+                <li>
+                  <a class="text-white" href="#Team">Team</a>
+                </li>
+              </ul>
+            </div>
+            <!--Grid column-->
 
 
+          </div>
+          <!--Grid row-->
+        </section>
+        <!-- Section: Links -->
       </div>
-      <!--Grid row-->
-    </section>
-    <!-- Section: Links -->
-  </div>
-  <!-- Grid container -->
+      <!-- Grid container -->
 
-  <!-- Copyright -->
-  <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
-    © 2021 Copyright
-    <a class="text-white" href="https://mdbootstrap.com/">Provision Hacks. All Rights Reserved.</a>
-  </div>
-  <!-- Copyright -->
-</footer>
+      <!-- Copyright -->
+      <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+        © 2021 Copyright
+        <a class="text-white" href="https://mdbootstrap.com/">Provision Hacks. All Rights Reserved.</a>
+      </div>
+      <!-- Copyright -->
+    </footer>
 
 
     <!--END of Footer-->
@@ -577,7 +668,7 @@
   <script>
     AOS.init();
   </script>
-   <script> (function() { var qs,js,q,s,d=document, gi=d.getElementById, ce=d.createElement, gt=d.getElementsByTagName, id="typef_orm_share", b="https://embed.typeform.com/"; if(!gi.call(d,id)){ js=ce.call(d,"script"); js.id=id; js.src=b+"embed.js"; q=gt.call(d,"script")[0]; q.parentNode.insertBefore(js,q) } })() </script>
+  <script> (function () { var qs, js, q, s, d = document, gi = d.getElementById, ce = d.createElement, gt = d.getElementsByTagName, id = "typef_orm_share", b = "https://embed.typeform.com/"; if (!gi.call(d, id)) { js = ce.call(d, "script"); js.id = id; js.src = b + "embed.js"; q = gt.call(d, "script")[0]; q.parentNode.insertBefore(js, q) } })() </script>
 </body>
 
 </html>
