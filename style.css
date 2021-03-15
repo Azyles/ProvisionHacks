@@ -150,6 +150,10 @@
     }
 }
 
-.card-img-top{
-  max-height: 13rem;
+.imagee{
+    height:20vw;
+}
+
+.images{
+  height: 15vw;
 }
