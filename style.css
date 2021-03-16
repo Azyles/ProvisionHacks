@@ -1,34 +1,31 @@
-.navbar-nav > li > a{
-    color: white;
-    border-radius: 10px;
-    
-  padding-top:20px;
-  padding-bottom:20px;
+.navbar-nav > li > a {
+  color: white;
+  border-radius: 10px;
+
+  padding-top: 20px;
+  padding-bottom: 20px;
 }
 
-.navbar-nav > li > a:hover{
-    background-color:  rgba(33, 59, 94, 0.3);
-    border-radius: 10px;
-    color: white;
-    
+.navbar-nav > li > a:hover {
+  background-color: rgba(33, 59, 94, 0.3);
+  border-radius: 10px;
+  color: white;
 }
-.navbar-nav > li{
-  
+.navbar-nav > li {
   color: #2a2c35;
   font-size: calc(0.43em + 0.43vw);
-  padding-left:10px;
-  padding-right:10px;
-
+  padding-left: 10px;
+  padding-right: 10px;
 }
 
- .container-fluid{
-   width: 100%;
-   margin: 0;
-   padding: 0;
- }
+.container-fluid {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
 
- .button {
-  background-color: #4CAF50; /* Green */
+.button {
+  background-color: #4caf50; /* Green */
   border: none;
   color: white;
   padding: 12px 28px;
@@ -42,30 +39,27 @@
 }
 
 .buttonPD {
-  
   margin: 0px;
   font-size: calc(0.4em + 0.4vw);
   background-color: transparent;
-  border: solid 1px white;
-  color:   white  ;
+  border: solid 2px #1f243b;
+  color: #8087aa;
   border-radius: 10px;
   font-weight: 600;
 }
 
 .buttonPD:hover {
   border: solid 2px transparent;
-  background-color: white;
-  color: #082333;
+  background-color: #1f243b;
+  color: #8087aa;
 }
 
-
 .buttonH {
-  
   margin: 0px;
   font-size: calc(0.4em + 0.4vw);
-  background-color: rgb(178, 98, 252);;
+  background-color: rgb(178, 98, 252);
   border: solid 1px rgb(178, 98, 252);
-  color:   rgb(178, 98, 252)  ;
+  color: rgb(178, 98, 252);
   border-radius: 10px;
   font-weight: 600;
 }
@@ -76,80 +70,117 @@
   color: #082333;
 }
 
-
 .btn:link,
 .btn:visited {
-    text-transform: uppercase;
-    text-decoration: none;
-    padding: 15px 40px;
-    display: inline-block;
-    border-radius: 10px;
-    transition: all .2s;
-    position: absolute;
-    
+  text-transform: uppercase;
+  text-decoration: none;
+  padding: 15px 40px;
+  display: inline-block;
+  border-radius: 10px;
+  transition: all 0.2s;
+  position: absolute;
 }
 
 .btn:hover {
-    transform: translateY(-3px);
-    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+  transform: translateY(-3px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
 }
 
 .btn:active {
-    transform: translateY(-1px);
-    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+  transform: translateY(-1px);
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
 }
 
-
 .btn.btn-white {
-    background-color: rgb(144, 145, 236);
-    color: white;
+  background-color: rgb(144, 145, 236);
+  color: white;
 }
 
 .btn::after {
-    content: "";
-    display: inline-block;
-    height: 100%;
-    width: 100%;
-    border-radius: 10px;
-    position: absolute;
-    top: 0;
-    left: 0;
-    z-index: -1;
-    transition: all .4s;
-    
-    color: white;
+  content: "";
+  display: inline-block;
+  height: 100%;
+  width: 100%;
+  border-radius: 10px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  transition: all 0.4s;
+
+  color: white;
 }
 
 .btn-white::after {
-  
-    color: white;
-    background-color: rgb(144, 145, 236);
+  color: white;
+  background-color: rgb(144, 145, 236);
 }
 
 .btn:hover::after {
-  
-    color: white;
-    transform: scaleX(1.4) scaleY(1.6);
-    opacity: 0;
+  color: white;
+  transform: scaleX(1.4) scaleY(1.6);
+  opacity: 0;
 }
 
 .btn-animated {
-    animation: moveInBottom 5s ease-out;
-    animation-fill-mode: backwards;
+  animation: moveInBottom 5s ease-out;
+  animation-fill-mode: backwards;
 }
 
 @keyframes moveInBottom {
-    0% {
-        opacity: 0;
-        transform: translateY(30px);
-    }
+  0% {
+    opacity: 0;
+    transform: translateY(30px);
+  }
 
-    100% {
-        opacity: 1;
-        transform: translateY(0px);
-    }
+  100% {
+    opacity: 1;
+    transform: translateY(0px);
+  }
 }
 
-.card-img-top{
-  max-height: 13rem;
+.imagee {
+  height: 20vw;
+  object-fit: contain;
+  padding: 15%;
+}
+
+.images {
+  height: 15vw;
+}
+
+#button-addon1 {
+  color: #ffc371;
+}
+
+i {
+  color: #ffc371;
+}
+
+.form-control::placeholder {
+  font-size: 0.95rem;
+  color: #aaa;
+  font-style: italic;
+}
+
+.form-control.shadow-0:focus {
+  box-shadow: none;
+}
+
+.schedulecontTitle {
+  color: white;
+  font-size: calc(1em + 1vw);
+}
+.schedulecontContent {
+  color: grey;
+  font-size: calc(0.6em + 0.6vw);
+}
+
+.schedulecont{
+  margin: 30px;
+  margin-left: 20px;
+  margin-right: 20px;
+  
+  background-color:  rgb(17, 21, 36);
+  border-radius: 10px;
 }
