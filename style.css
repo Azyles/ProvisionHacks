@@ -42,16 +42,16 @@
   margin: 0px;
   font-size: calc(0.4em + 0.4vw);
   background-color: transparent;
-  border: solid 1px white;
-  color: white;
+  border: solid 2px #1f243b;
+  color: #8087aa;
   border-radius: 10px;
   font-weight: 600;
 }
 
 .buttonPD:hover {
   border: solid 2px transparent;
-  background-color: white;
-  color: #082333;
+  background-color: #1f243b;
+  color: #8087aa;
 }
 
 .buttonH {
